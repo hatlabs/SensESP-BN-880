@@ -1,9 +1,6 @@
-# SensESP Project Template
+# SensESP BN-880 GPS Example
 
-This repository provides a template for [SensESP](https://github.com/SignalK/SensESP/) projects.
-Fork, clone or download the repository and try building and uploading the project to an ESP32 device.
-You should immediately see output on the serial monitor!
+This is an example project for a GNSS (GPS) receiver using an [SH-ESP32](https://shop.hatlabs.fi/products/sh-esp32), a [Beitian BN-880 module](https://www.aliexpress.com/item/32853587391.html), and [SensESP](https://signalk.org/SensESP/). The BN-880 module also includes a 3-axis digital compass. This project also includes rudimentary support for the compass. Proper calibration of the compass is not yet implemented, so it is not usable for navigation.
 
-To customize the template for your own purposes, edit the `src/main.cpp` and `platformio.ini` files.
+Given that most GPS modules transmit NMEA 0183 like sentences over a serial interface, this code can be trivially adapted to use other GPS modules.
 
-Comprehensive documentation for SensESP, including how to get started with your own project, is available at the [SensESP documentation site](https://signalk.org/SensESP/).
